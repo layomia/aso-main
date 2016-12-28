@@ -1,0 +1,52 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.navbar-brand {
+    font-size: 1.8em;
+}
+			
+#topContainer {
+    background-size: cover;
+    background-color: #FBFBFB;
+}
+			
+#aboutContainer {
+    background-size: cover;
+    background-color: #F1F2F2;
+}
+			
+#topRow {
+    text-align: center;
+    margin-top: 100px;
+}
+			
+#topRow h1 {
+    font-size: 300%;
+}
+			
+.bold {
+    font-weight: bold;
+}
+			
+.marginTop {
+    margin-top: 30px;
+}
+			
+.strikethrough {
+    text-decoration: line-through;
+}
+			
+.center {
+    text-align: center;
+}
+			
+.left {
+    text-align: left;
+}
+			
+.contentContainer {
+}
+			
+.title {
+    margin-top: 50px;
+}
