@@ -1,8 +1,10 @@
-<div class="container contentContainer" id="topContainer">
+<div class="container contentContainer" id="home">
     <div class="row">
         <div class="col-md-6 col-md-offset-3" id="topRow">
             <h1 class="marginTop">The most efficient way to make Nigerian clothing.</h1>
-            <p class="lead left marginTop">Eliminate all the inefficiencies that come with making traditional Nigerian clothing. Use our Online Design Wizard to select fabric and design clothing, and we'll deliver to your doorstep.</p>
+            <p class="lead left marginTop">
+                Eliminate all the inefficiencies that come with making traditional Nigerian clothing. Use our Online Design Wizard to select fabric and design clothing, and we'll deliver to your doorstep.
+            </p>
 					
             <p class="bold marginTop">
                 Interested? Sign up to know when we launch.
@@ -20,7 +22,7 @@
     </div>
 </div>
 		
-<div class="container contentContainer" id="aboutContainer">
+<div class="container contentContainer" id="about">
     <div class="row center">
         <h1 class="center title">Quality guaranteed.</h1>
         <p class="lead">Go from inspiration and ideas to beautiful clothing from the comfort of your home or office.</p>
@@ -52,3 +54,8 @@
         </div>
     </div>
 </div>
+
+<style>
+    $(".contentContainer").css("minHeight", $(window).height());
+    console.log($(window).height())
+</style>

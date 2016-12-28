@@ -1,3 +1,4 @@
+<!DOCTYPE HTML>
 <html>
   
   <head>
@@ -11,17 +12,22 @@
     <%= csrf_meta_tags %>
   </head>
   
-  <body>
+  <body data-spy="scroll" data-target=".navbar-collapse">
     
     <%= render 'layouts/navigation' %>
     <%= render 'layouts/messages' %>
     
-    <div class="container">
-      <%= yield %>  
-    </div>
+  
+    <%= yield %>  
   
     <%= render 'layouts/footer' %>
     <%= debug(params) if Rails.env.development? %>
+    
+    <script>
+			$(".contentContainer").css("minHeight", $(window).height());
+			console.log($(window).height());
+		</script>
+    
   </body>
 
 </html>
