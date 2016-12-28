@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @early_signup.email %>
+</p>
+
+<p>
+  <strong>Signed up:</strong>
+  <%= @early_signup.signed_up %>
+</p>
+
+<%= link_to 'Edit', edit_early_signup_path(@early_signup) %> |
+<%= link_to 'Back', early_signups_path %>

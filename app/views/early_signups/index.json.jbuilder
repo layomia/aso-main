@@ -1,0 +1,1 @@
+json.array! @early_signups, partial: 'early_signups/early_signup', as: :early_signup

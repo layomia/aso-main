@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Early Signups</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Email</th>
+      <th>Signed up</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @early_signups.each do |early_signup| %>
+      <tr>
+        <td><%= early_signup.email %></td>
+        <td><%= early_signup.signed_up %></td>
+        <td><%= link_to 'Show', early_signup %></td>
+        <td><%= link_to 'Edit', edit_early_signup_path(early_signup) %></td>
+        <td><%= link_to 'Destroy', early_signup, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Early signup', new_early_signup_path %>

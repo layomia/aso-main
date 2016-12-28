@@ -1,0 +1,15 @@
+<%= render 'shared/errors', obj: @early_signup %>
+
+<%= form_for(@early_signup) do |f| %>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :signed_up %><br>
+    <%= f.check_box :signed_up %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
